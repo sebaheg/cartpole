@@ -3,8 +3,8 @@ import gym
 import numpy as np
 
 # Import agents
-from tql_cartpole import TQLAgent
-from dql_cartpole import DQLAgent
+from agents.tql_cartpole import TQLAgent
+from agents.dql_cartpole import DQLAgent
 
 
 class Experiment():
