@@ -14,7 +14,7 @@ This notebooks contains...
 The current problems with the code.
 
 1. Convergence of table Q-learning
-The convergence of table Q-learning seem to be very sensitive to the learning parameters. Changing $\tao$ from 0.0002 to 0.0004 might cause the algorithm to not converge anymore. Is it possible to make the algorithm more robust? What is the cause of not converging?
+The convergence of table Q-learning seem to be very sensitive to the learning parameters. Changing ```tao``` from 0.0002 to 0.0004 might cause the algorithm to not converge anymore. Is it possible to make the algorithm more robust? What is the cause of not converging?
 
 1. Must set terminal state to zero for deep Q-learning
 The deep Q-learning agent has needs to set the terminal state to zero otherwise it will not converge, why is this?
