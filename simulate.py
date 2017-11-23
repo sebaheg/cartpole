@@ -17,26 +17,6 @@ class Experiment():
         self.n_episodes = 1300
 
 
-class RandomAgent():
-    # Random agent
-
-    def __init__(self, exp):
-        self.steps = 0
-
-    def act(self, state):
-        # Select a random action
-        action = exp.env.action_space.sample()
-        return action
-
-    def observe(self, sample):  # (state_0, action, reward, state_1)
-        # Do nothing
-        pass
-
-    def replay(self):
-        # Do nothing
-        return None
-
-
 def simulate(exp, agent):
 
     history = {'episodes': np.array([]), 'reward_cum': np.array([])}
@@ -82,7 +62,7 @@ def simulate(exp, agent):
 if __name__ == "__main__":
     # Create experiment and agent
     exp = Experiment()
-    agent = DQLAgent(exp) # Change here to use table q-learning
+    agent = TQLAgent(exp) # Change here to use table q-learning
 
     # Simulate
     history = simulate(exp, agent)
