@@ -10,7 +10,7 @@ This notebooks contains...
 * **nb2-tql-cartpolen**
 * **nb3-dql-cartpolen**
 
-# Problems
+# Code problems
 The current problems with the code.
 
 1. Convergence of table Q-learning
@@ -35,4 +35,11 @@ states_0 = np.array([o[0] for o in batch])
 states_1 = np.array([(no_state if o[3] is None else o[3]) for o in batch])
 ```
 
-1. Next problem
+# To do
+* In order to better understand the cartpole problem. We should plot the learned function (by the function approximition) in a contour plot. To do this we can discard two of the state variables in the problem. and only use the position based variables. Is this correct? Not Markov anymore but might still work?
+
+
+# Theory discussion topics
+* Difference between value iteration and policy iteration. In practice, value iteration is much faster per iteration but policy iteration takes fewer iterations.
+* "In discrete environments, there is a guarantee that any operation that updates the value function (according to the Bellman Equations) can only reduce the error between the current value function and the optimal value function. This guarantee no longer holds when generalization is used."
+* How does it work with trajectories. Refer to the Bellman optimality in the study group slides.
